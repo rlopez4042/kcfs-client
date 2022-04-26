@@ -75,7 +75,7 @@ const Register = () => {
         </div>
         <div className="loginLink">
           <h1 className="sendTo">Already registered? Sign In:</h1>
-          <Link to="/login">
+          <Link to="/landingPage">
             <button type="button" className="button-18">
               Sign In
             </button>

@@ -1,13 +1,8 @@
 import Introduction from "../Introduction/Introduction";
+import Login from "../Login/Login";
 
 const LandingPage = () => {
-  const user = localStorage.getItem("userName");
-  const handleLogout = () => {
-    localStorage.clear();
-    window.location.reload();
-    window.location = "/landingPage";
-  };
-
+  
   return (
     <div>
       <header>
@@ -15,12 +10,7 @@ const LandingPage = () => {
           Keep Calm and Finish Strong
         </h1>
       </header>
-      <Introduction />
-      {user && (
-        <button id="logout" className="" onClick={handleLogout}>
-          Logout
-        </button>
-      )}
+      <Login />
     </div>
   );
 };

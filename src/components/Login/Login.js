@@ -27,7 +27,7 @@ const Login = () => {
       localStorage.setItem("bear", res.token);
       localStorage.setItem("userName", res.name);
 
-      window.location = "/landingPage";
+      window.location = "/overview";
     } catch (error) {
       if (
         error.response &&
@@ -71,7 +71,7 @@ const Login = () => {
         </div>
         <div className="registerLink">
           <h1 className="sendTo">New here?</h1>
-          <Link to="/register">
+          <Link to="/introduction">
             <button type="button" className="button-18">
               Register
             </button>
